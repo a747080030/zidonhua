@@ -2,6 +2,8 @@ import seldom
 from seldom import Seldom
 from seldom import SeldomTestLoader
 from seldom import TestMainExtend
+import sys, io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="gb18030")
 
 
 if __name__ == '__main__':

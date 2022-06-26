@@ -8087,3 +8087,651 @@
  2022-06-26 17:52:12 log.py | INFO | ✅ click.
  2022-06-26 17:52:12 log.py | INFO | 🔖 Test Case: 编辑验证
  2022-06-26 17:52:22 log.py | SUCCESS | A run the test in debug mode without generating HTML report!
+ 2022-06-26 20:48:12 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:48:12 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-26 20:48:12 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-26 20:48:12 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:48:12 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:48:12 log.py | DEBUG | [type]: json      [time]: 0.398769 
+
+ 2022-06-26 20:48:12 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '06e8bd545f796b2ed72b9ada07eb1fa32b66a538', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-26 20:48:12 log.py | INFO | Execute login - 获取token success!
+ 2022-06-26 20:48:12 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:48:12 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+ 2022-06-26 20:48:12 log.py | DEBUG | [headers]:
+ {'token': '06e8bd545f796b2ed72b9ada07eb1fa32b66a538'} 
+
+ 2022-06-26 20:48:12 log.py | DEBUG | [data]:
+ {'name': '名字啦', 'describe': '不可描述', 'status': True} 
+
+ 2022-06-26 20:48:13 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:48:13 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:48:13 log.py | DEBUG | [type]: json      [time]: 0.080118 
+
+ 2022-06-26 20:48:13 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': []} 
+
+ 2022-06-26 20:48:13 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:48:13 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/?page=1&size=6 
+
+ 2022-06-26 20:48:13 log.py | DEBUG | [headers]:
+ {'token': '06e8bd545f796b2ed72b9ada07eb1fa32b66a538'} 
+
+ 2022-06-26 20:48:13 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:48:13 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:48:13 log.py | DEBUG | [type]: json      [time]: 0.087811 
+
+ 2022-06-26 20:48:13 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 28, 'page': 1, 'size': 6, 'projectList': [{'id': 75, 'name': 'shanqw_TEST', 'describe': '测试使用', 'status': True, 'create_time': '2022-06-06 03:08:01'}, {'id': 129, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 00:52:02'}, {'id': 131, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 01:25:30'}, {'id': 132, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:23'}, {'id': 134, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:28'}, {'id': 136, 'name': '1656067714.7890763', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-10 05:01:34'}]}} 
+
+ 2022-06-26 20:48:13 log.py | INFO | Execute get_id - 获取id success!
+ 2022-06-26 20:48:13 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:48:13 log.py | INFO | [method]: PUT      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+ 2022-06-26 20:48:13 log.py | DEBUG | [headers]:
+ {'token': '06e8bd545f796b2ed72b9ada07eb1fa32b66a538'} 
+
+ 2022-06-26 20:48:13 log.py | DEBUG | [data]:
+ {'id': 136, 'name': '测试测试2', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-06 06:47:40'} 
+
+ 2022-06-26 20:48:13 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:48:13 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:48:13 log.py | DEBUG | [type]: json      [time]: 0.077993 
+
+ 2022-06-26 20:48:13 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': []} 
+
+ 2022-06-26 20:48:13 log.py | INFO | 📖 http://quick.testpub.cn/#/login
+ 2022-06-26 20:48:26 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> clear input.
+ 2022-06-26 20:48:26 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> input 'admin' and enter.
+ 2022-06-26 20:48:27 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> clear input.
+ 2022-06-26 20:48:28 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> input 'admin123456' and enter.
+ 2022-06-26 20:48:29 log.py | INFO | ✅ Find 2 element: css selector=#loginButton  -> click.
+ 2022-06-26 20:48:29 log.py | INFO | 💤️ sleep: 3s.
+ 2022-06-26 20:48:32 log.py | INFO | 🔖 Test Case: 创建项目
+ 2022-06-26 20:48:33 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=create-project] .
+ 2022-06-26 20:48:33 log.py | INFO | ✅ click.
+ 2022-06-26 20:48:33 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=project-name] .
+ 2022-06-26 20:48:33 log.py | INFO | ✅ input '1656247712.2999735'.
+ 2022-06-26 20:48:34 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=project-desc] .
+ 2022-06-26 20:48:34 log.py | INFO | ✅ input 'UI测试的描述文本'.
+ 2022-06-26 20:48:35 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=save-project] .
+ 2022-06-26 20:48:35 log.py | INFO | ✅ click.
+ 2022-06-26 20:48:35 log.py | INFO | 👀 assertElement.
+ 2022-06-26 20:48:36 log.py | INFO | ✅ Find 1 element: css selector=.el-message__content .
+ 2022-06-26 20:48:36 log.py | INFO | 🔖 Test Case: 验证数据
+ 2022-06-26 20:48:37 log.py | INFO | 🔍 find Find 1 element: css selector=.el-input__inner .
+ 2022-06-26 20:48:37 log.py | INFO | ✅ click.
+ 2022-06-26 20:48:38 log.py | INFO | 🔍 find Find 1 element: css selector=div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(2) .
+ 2022-06-26 20:48:38 log.py | INFO | ✅ click.
+ 2022-06-26 20:48:38 log.py | INFO | 🔍 find Find 1 element: css selector=ul.el-pager > li:nth-last-child(1) .
+ 2022-06-26 20:48:38 log.py | INFO | ✅ click.
+ 2022-06-26 20:48:40 log.py | INFO | 👀 assertText: 1656247712.2999735.
+ 2022-06-26 20:48:40 log.py | INFO | 📖 http://quick.testpub.cn/#/login
+ 2022-06-26 20:48:40 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> clear input.
+ 2022-06-26 20:48:41 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> input 'admin' and enter.
+ 2022-06-26 20:48:42 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> clear input.
+ 2022-06-26 20:48:43 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> input 'admin123456' and enter.
+ 2022-06-26 20:48:43 log.py | INFO | ✅ Find 2 element: css selector=#loginButton  -> click.
+ 2022-06-26 20:48:43 log.py | INFO | 💤️ sleep: 3s.
+ 2022-06-26 20:48:46 log.py | INFO | 🔖 Test Case: 删除最后一个项目
+ 2022-06-26 20:48:47 log.py | INFO | 🔍 find Find 1 element: css selector=.el-input__inner .
+ 2022-06-26 20:48:47 log.py | INFO | ✅ click.
+ 2022-06-26 20:48:48 log.py | INFO | 🔍 find Find 1 element: css selector=div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(2) .
+ 2022-06-26 20:48:48 log.py | INFO | ✅ click.
+ 2022-06-26 20:48:49 log.py | INFO | 🔍 find Find 1 element: css selector=ul.el-pager > li:nth-last-child(1) .
+ 2022-06-26 20:48:49 log.py | INFO | ✅ click.
+ 2022-06-26 20:48:50 log.py | INFO | 🔍 find Find 10 element: css selector=div:nth-last-child(1) > div > div.el-card__header > div > span:nth-child(2) > div > i .
+ 2022-06-26 20:48:50 log.py | INFO | ✅ Move to the element and click.
+ 2022-06-26 20:48:51 log.py | INFO | 🔍 find Find 1 element: css selector=body > ul > li:nth-child(2) > button > span .
+ 2022-06-26 20:48:51 log.py | INFO | ✅ click.
+ 2022-06-26 20:48:51 log.py | INFO | 👀 assertElement.
+ 2022-06-26 20:48:52 log.py | INFO | ✅ Find 1 element: css selector=.el-message__content .
+ 2022-06-26 20:48:52 log.py | INFO | 📖 http://quick.testpub.cn/#/login
+ 2022-06-26 20:48:53 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> clear input.
+ 2022-06-26 20:48:53 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> input 'admin' and enter.
+ 2022-06-26 20:48:54 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> clear input.
+ 2022-06-26 20:48:55 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> input 'admin123456' and enter.
+ 2022-06-26 20:48:56 log.py | INFO | ✅ Find 2 element: css selector=#loginButton  -> click.
+ 2022-06-26 20:48:56 log.py | INFO | 💤️ sleep: 3s.
+ 2022-06-26 20:48:59 log.py | INFO | 🔖 Test Case: 编辑项目验证
+ 2022-06-26 20:49:00 log.py | INFO | 🔍 find Find 1 element: css selector=div:nth-last-child(1) > div > div > div.el-card__header > div > span:nth-child(2) > div > i .
+ 2022-06-26 20:49:00 log.py | INFO | ✅ Move to the element and click.
+ 2022-06-26 20:49:01 log.py | INFO | 🔍 find Find 1 element: css selector=body > ul > li:nth-child(1) > button > span .
+ 2022-06-26 20:49:01 log.py | INFO | ✅ click.
+ 2022-06-26 20:49:02 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=project-name] .
+ 2022-06-26 20:49:02 log.py | INFO | ✅ clear.
+ 2022-06-26 20:49:02 log.py | INFO | ✅ input '1656247739.3758094'.
+ 2022-06-26 20:49:03 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=save-project] .
+ 2022-06-26 20:49:03 log.py | INFO | ✅ click.
+ 2022-06-26 20:49:04 log.py | INFO | 👀 assertText: 1656247739.3758094.
+ 2022-06-26 20:49:04 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:04 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-26 20:49:04 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:04 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [type]: json      [time]: 0.406475 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '8ca92d041cf660951393850d5b63a2df32dfa209', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-26 20:49:04 log.py | INFO | Execute login - 获取token success!
+ 2022-06-26 20:49:04 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:04 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/?page=1&size=6 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [headers]:
+ {'token': '8ca92d041cf660951393850d5b63a2df32dfa209'} 
+
+ 2022-06-26 20:49:04 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:04 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [type]: json      [time]: 0.094417 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 28, 'page': 1, 'size': 6, 'projectList': [{'id': 75, 'name': 'shanqw_TEST', 'describe': '测试使用', 'status': True, 'create_time': '2022-06-06 03:08:01'}, {'id': 129, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 00:52:02'}, {'id': 131, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 01:25:30'}, {'id': 132, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:23'}, {'id': 134, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:28'}, {'id': 136, 'name': '1656247739.3758094', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-10 05:01:34'}]}} 
+
+ 2022-06-26 20:49:04 log.py | INFO | Execute get_id - 获取id success!
+ 2022-06-26 20:49:04 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:04 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/module/ 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [headers]:
+ {'token': '8ca92d041cf660951393850d5b63a2df32dfa209'} 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [data]:
+ {'project_id': 136, 'name': '创建根节点', 'describe': '111', 'parent_id': 0} 
+
+ 2022-06-26 20:49:04 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:04 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [type]: json      [time]: 0.097783 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': []} 
+
+ 2022-06-26 20:49:04 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:04 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/?page=1&size=6 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [headers]:
+ {'token': '8ca92d041cf660951393850d5b63a2df32dfa209'} 
+
+ 2022-06-26 20:49:04 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:04 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [type]: json      [time]: 0.126958 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 28, 'page': 1, 'size': 6, 'projectList': [{'id': 75, 'name': 'shanqw_TEST', 'describe': '测试使用', 'status': True, 'create_time': '2022-06-06 03:08:01'}, {'id': 129, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 00:52:02'}, {'id': 131, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 01:25:30'}, {'id': 132, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:23'}, {'id': 134, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:28'}, {'id': 136, 'name': '1656247739.3758094', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-10 05:01:34'}]}} 
+
+ 2022-06-26 20:49:04 log.py | INFO | Execute get_id - 获取id success!
+ 2022-06-26 20:49:04 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:04 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/136/moduleTree 
+
+ 2022-06-26 20:49:04 log.py | DEBUG | [headers]:
+ {'token': '8ca92d041cf660951393850d5b63a2df32dfa209'} 
+
+ 2022-06-26 20:49:05 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:05 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:05 log.py | DEBUG | [type]: json      [time]: 0.028646 
+
+ 2022-06-26 20:49:05 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 112, 'parent_id': 0, 'label': '创建根节点', 'children': []}]} 
+
+ 2022-06-26 20:49:05 log.py | INFO | Execute get_module_id - 获取根节点id success!
+ 2022-06-26 20:49:05 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:05 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/case/create/ 
+
+ 2022-06-26 20:49:05 log.py | DEBUG | [headers]:
+ {'token': '8ca92d041cf660951393850d5b63a2df32dfa209'} 
+
+ 2022-06-26 20:49:05 log.py | DEBUG | [json]:
+ {'name': '这是名称啦', 'module_id': 112, 'method': 'GET', 'url': 'http://httpbin.org/get', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"这是response"', 'assert_type': 'include', 'assert_text': '这是assert'} 
+
+ 2022-06-26 20:49:05 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:05 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:05 log.py | DEBUG | [type]: json      [time]: 0.078472 
+
+ 2022-06-26 20:49:05 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': []} 
+
+ 2022-06-26 20:49:05 log.py | INFO | 📖 http://quick.testpub.cn/#/login
+ 2022-06-26 20:49:05 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> clear input.
+ 2022-06-26 20:49:06 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> input 'admin' and enter.
+ 2022-06-26 20:49:07 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> clear input.
+ 2022-06-26 20:49:08 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> input 'admin123456' and enter.
+ 2022-06-26 20:49:09 log.py | INFO | ✅ Find 2 element: css selector=#loginButton  -> click.
+ 2022-06-26 20:49:09 log.py | INFO | 💤️ sleep: 3s.
+ 2022-06-26 20:49:12 log.py | INFO | 🔖 Test Case: 进入用例管理界面
+ 2022-06-26 20:49:12 log.py | INFO | 🔍 find Find 1 element: css selector=.el-icon-s-grid .
+ 2022-06-26 20:49:12 log.py | INFO | ✅ click.
+ 2022-06-26 20:49:12 log.py | INFO | 🔖 Test Case: 构建根节点
+ 2022-06-26 20:49:13 log.py | INFO | 🔍 find Find 1 element: css selector=.el-input__inner .
+ 2022-06-26 20:49:13 log.py | INFO | ✅ Move to the element and click.
+ 2022-06-26 20:49:14 log.py | INFO | 🔍 find Find 1 element: css selector=body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-last-child(1) > span .
+ 2022-06-26 20:49:14 log.py | INFO | ✅ click.
+ 2022-06-26 20:49:15 log.py | INFO | 🔍 find Find 2 element: css selector=.el-icon-circle-plus-outline .
+ 2022-06-26 20:49:15 log.py | INFO | ✅ click.
+ 2022-06-26 20:49:16 log.py | INFO | 🔍 find Find 1 element: css selector=#nav > div > section > section > main > div > div.project-dialog > div > div > div.el-dialog__body > form > div:nth-child(2) > div > div > input .
+ 2022-06-26 20:49:16 log.py | INFO | ✅ input '1656247745.1349514'.
+ 2022-06-26 20:49:17 log.py | INFO | 🔍 find Find 1 element: css selector=#nav > div > section > section > main > div > div.project-dialog > div > div > div.el-dialog__body > form > div:nth-child(4) > div > div > button.el-button.el-button--primary .
+ 2022-06-26 20:49:17 log.py | INFO | ✅ click.
+ 2022-06-26 20:49:17 log.py | INFO | 👀 assertElement.
+ 2022-06-26 20:49:18 log.py | INFO | ✅ Find 1 element: css selector=.el-message__content .
+ 2022-06-26 20:49:18 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:18 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-26 20:49:18 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-26 20:49:18 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:18 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:18 log.py | DEBUG | [type]: json      [time]: 0.400751 
+
+ 2022-06-26 20:49:18 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '40054c344b15356855b8c7c65240571000db7d1f', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-26 20:49:18 log.py | INFO | Execute login - 获取token success!
+ 2022-06-26 20:49:18 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:18 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/?page=1&size=6 
+
+ 2022-06-26 20:49:18 log.py | DEBUG | [headers]:
+ {'token': '40054c344b15356855b8c7c65240571000db7d1f'} 
+
+ 2022-06-26 20:49:18 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:18 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:18 log.py | DEBUG | [type]: json      [time]: 0.08179 
+
+ 2022-06-26 20:49:18 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 28, 'page': 1, 'size': 6, 'projectList': [{'id': 75, 'name': 'shanqw_TEST', 'describe': '测试使用', 'status': True, 'create_time': '2022-06-06 03:08:01'}, {'id': 129, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 00:52:02'}, {'id': 131, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 01:25:30'}, {'id': 132, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:23'}, {'id': 134, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:28'}, {'id': 136, 'name': '1656247739.3758094', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-10 05:01:34'}]}} 
+
+ 2022-06-26 20:49:18 log.py | INFO | Execute get_id - 获取id success!
+ 2022-06-26 20:49:18 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:18 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/136/moduleTree 
+
+ 2022-06-26 20:49:18 log.py | DEBUG | [headers]:
+ {'token': '40054c344b15356855b8c7c65240571000db7d1f'} 
+
+ 2022-06-26 20:49:19 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:19 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:19 log.py | DEBUG | [type]: json      [time]: 0.040564 
+
+ 2022-06-26 20:49:19 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 112, 'parent_id': 0, 'label': '创建根节点', 'children': []}]} 
+
+ 2022-06-26 20:49:19 log.py | INFO | Execute get_module_id - 获取根节点id success!
+ 2022-06-26 20:49:19 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:19 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/module/112/cases/?page=1&size=5 
+
+ 2022-06-26 20:49:19 log.py | DEBUG | [headers]:
+ {'token': '40054c344b15356855b8c7c65240571000db7d1f'} 
+
+ 2022-06-26 20:49:19 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:19 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:19 log.py | DEBUG | [type]: json      [time]: 0.090086 
+
+ 2022-06-26 20:49:19 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 1, 'page': 1, 'size': 5, 'caseList': [{'id': 51, 'name': '这是名称啦', 'url': 'http://httpbin.org/get', 'method': 'GET', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"这是response"', 'assert_type': 'include', 'assert_text': '这是assert', 'module_id': 112, 'module_name': '创建根节点', 'create_time': '2022-06-26 12:49:05', 'project_id': '136', 'project_name': '1656247739.3758094'}]}} 
+
+ 2022-06-26 20:49:19 log.py | INFO | Execute get_class - 获取用例id success!
+ 2022-06-26 20:49:19 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:49:19 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/task/create/ 
+
+ 2022-06-26 20:49:19 log.py | DEBUG | [headers]:
+ {'token': '40054c344b15356855b8c7c65240571000db7d1f'} 
+
+ 2022-06-26 20:49:19 log.py | DEBUG | [json]:
+ {'project_id': 136, 'id': 0, 'name': '以为是', 'describe': '啊啊啊', 'cases': [{'moduleId': 112, 'casesId': [51]}]} 
+
+ 2022-06-26 20:49:19 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:49:19 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:49:19 log.py | DEBUG | [type]: json      [time]: 0.097677 
+
+ 2022-06-26 20:49:19 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'project_id': 136, 'name': '以为是', 'describe': '啊啊啊'}} 
+
+ 2022-06-26 20:49:19 log.py | SUCCESS | generated html file: file:///C:\Users\74708\Desktop\myseldom\reports\2022_06_26_20_48_06_result.html
+ 2022-06-26 20:49:19 log.py | SUCCESS | generated log file: file:///C:\Users\74708\Desktop\myseldom\reports\seldom_log.log
+ 2022-06-26 20:50:10 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:50:10 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-26 20:50:10 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-26 20:50:11 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:50:11 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [type]: json      [time]: 0.53867 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': 'b6dc09a690a635467f639b606e7e6f4028f105bf', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-26 20:50:11 log.py | INFO | Execute login - 获取token success!
+ 2022-06-26 20:50:11 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:50:11 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [headers]:
+ {'token': 'b6dc09a690a635467f639b606e7e6f4028f105bf'} 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [data]:
+ {'name': '名字啦', 'describe': '不可描述', 'status': True} 
+
+ 2022-06-26 20:50:11 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:50:11 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [type]: json      [time]: 0.089571 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': []} 
+
+ 2022-06-26 20:50:11 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:50:11 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/?page=1&size=6 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [headers]:
+ {'token': 'b6dc09a690a635467f639b606e7e6f4028f105bf'} 
+
+ 2022-06-26 20:50:11 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:50:11 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [type]: json      [time]: 0.076443 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 29, 'page': 1, 'size': 6, 'projectList': [{'id': 75, 'name': 'shanqw_TEST', 'describe': '测试使用', 'status': True, 'create_time': '2022-06-06 03:08:01'}, {'id': 129, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 00:52:02'}, {'id': 131, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 01:25:30'}, {'id': 132, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:23'}, {'id': 134, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:28'}, {'id': 136, 'name': '1656247739.3758094', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-10 05:01:34'}]}} 
+
+ 2022-06-26 20:50:11 log.py | INFO | Execute get_id - 获取id success!
+ 2022-06-26 20:50:11 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:50:11 log.py | INFO | [method]: PUT      [url]: http://quick.testpub.cn/api/v1/project/ 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [headers]:
+ {'token': 'b6dc09a690a635467f639b606e7e6f4028f105bf'} 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [data]:
+ {'id': 136, 'name': '测试测试2', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-06 06:47:40'} 
+
+ 2022-06-26 20:50:11 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:50:11 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [type]: json      [time]: 0.21969 
+
+ 2022-06-26 20:50:11 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': []} 
+
+ 2022-06-26 20:50:11 log.py | INFO | 📖 http://quick.testpub.cn/#/login
+ 2022-06-26 20:50:24 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> clear input.
+ 2022-06-26 20:50:25 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> input 'admin' and enter.
+ 2022-06-26 20:50:26 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> clear input.
+ 2022-06-26 20:50:26 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> input 'admin123456' and enter.
+ 2022-06-26 20:50:27 log.py | INFO | ✅ Find 2 element: css selector=#loginButton  -> click.
+ 2022-06-26 20:50:27 log.py | INFO | 💤️ sleep: 3s.
+ 2022-06-26 20:50:30 log.py | INFO | 🔖 Test Case: 创建项目
+ 2022-06-26 20:50:31 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=create-project] .
+ 2022-06-26 20:50:31 log.py | INFO | ✅ click.
+ 2022-06-26 20:50:32 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=project-name] .
+ 2022-06-26 20:50:32 log.py | INFO | ✅ input '1656247830.6994321'.
+ 2022-06-26 20:50:33 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=project-desc] .
+ 2022-06-26 20:50:33 log.py | INFO | ✅ input 'UI测试的描述文本'.
+ 2022-06-26 20:50:33 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=save-project] .
+ 2022-06-26 20:50:33 log.py | INFO | ✅ click.
+ 2022-06-26 20:50:33 log.py | INFO | 👀 assertElement.
+ 2022-06-26 20:50:34 log.py | INFO | ✅ Find 1 element: css selector=.el-message__content .
+ 2022-06-26 20:50:34 log.py | INFO | 🔖 Test Case: 验证数据
+ 2022-06-26 20:50:35 log.py | INFO | 🔍 find Find 1 element: css selector=.el-input__inner .
+ 2022-06-26 20:50:35 log.py | INFO | ✅ click.
+ 2022-06-26 20:50:36 log.py | INFO | 🔍 find Find 1 element: css selector=div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(2) .
+ 2022-06-26 20:50:36 log.py | INFO | ✅ click.
+ 2022-06-26 20:50:37 log.py | INFO | 🔍 find Find 1 element: css selector=ul.el-pager > li:nth-last-child(1) .
+ 2022-06-26 20:50:37 log.py | INFO | ✅ click.
+ 2022-06-26 20:50:38 log.py | INFO | 👀 assertText: 1656247830.6994321.
+ 2022-06-26 20:50:38 log.py | INFO | 📖 http://quick.testpub.cn/#/login
+ 2022-06-26 20:50:39 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> clear input.
+ 2022-06-26 20:50:39 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> input 'admin' and enter.
+ 2022-06-26 20:50:40 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> clear input.
+ 2022-06-26 20:50:41 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> input 'admin123456' and enter.
+ 2022-06-26 20:50:42 log.py | INFO | ✅ Find 2 element: css selector=#loginButton  -> click.
+ 2022-06-26 20:50:42 log.py | INFO | 💤️ sleep: 3s.
+ 2022-06-26 20:50:45 log.py | INFO | 🔖 Test Case: 删除最后一个项目
+ 2022-06-26 20:50:46 log.py | INFO | 🔍 find Find 1 element: css selector=.el-input__inner .
+ 2022-06-26 20:50:46 log.py | INFO | ✅ click.
+ 2022-06-26 20:50:46 log.py | INFO | 🔍 find Find 1 element: css selector=div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-child(2) .
+ 2022-06-26 20:50:46 log.py | INFO | ✅ click.
+ 2022-06-26 20:50:47 log.py | INFO | 🔍 find Find 1 element: css selector=ul.el-pager > li:nth-last-child(1) .
+ 2022-06-26 20:50:47 log.py | INFO | ✅ click.
+ 2022-06-26 20:50:48 log.py | INFO | 🔍 find Find 10 element: css selector=div:nth-last-child(1) > div > div.el-card__header > div > span:nth-child(2) > div > i .
+ 2022-06-26 20:50:48 log.py | INFO | ✅ Move to the element and click.
+ 2022-06-26 20:50:49 log.py | INFO | 🔍 find Find 1 element: css selector=body > ul > li:nth-child(2) > button > span .
+ 2022-06-26 20:50:49 log.py | INFO | ✅ click.
+ 2022-06-26 20:50:49 log.py | INFO | 👀 assertElement.
+ 2022-06-26 20:50:50 log.py | INFO | ✅ Find 1 element: css selector=.el-message__content .
+ 2022-06-26 20:50:50 log.py | INFO | 📖 http://quick.testpub.cn/#/login
+ 2022-06-26 20:50:51 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> clear input.
+ 2022-06-26 20:50:52 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> input 'admin' and enter.
+ 2022-06-26 20:50:53 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> clear input.
+ 2022-06-26 20:50:53 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> input 'admin123456' and enter.
+ 2022-06-26 20:50:54 log.py | INFO | ✅ Find 2 element: css selector=#loginButton  -> click.
+ 2022-06-26 20:50:54 log.py | INFO | 💤️ sleep: 3s.
+ 2022-06-26 20:50:57 log.py | INFO | 🔖 Test Case: 编辑项目验证
+ 2022-06-26 20:50:58 log.py | INFO | 🔍 find Find 1 element: css selector=div:nth-last-child(1) > div > div > div.el-card__header > div > span:nth-child(2) > div > i .
+ 2022-06-26 20:50:58 log.py | INFO | ✅ Move to the element and click.
+ 2022-06-26 20:50:59 log.py | INFO | 🔍 find Find 1 element: css selector=body > ul > li:nth-child(1) > button > span .
+ 2022-06-26 20:50:59 log.py | INFO | ✅ click.
+ 2022-06-26 20:51:00 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=project-name] .
+ 2022-06-26 20:51:00 log.py | INFO | ✅ clear.
+ 2022-06-26 20:51:00 log.py | INFO | ✅ input '1656247857.707482'.
+ 2022-06-26 20:51:01 log.py | INFO | 🔍 find Find 1 element: css selector=[cy-data=save-project] .
+ 2022-06-26 20:51:01 log.py | INFO | ✅ click.
+ 2022-06-26 20:51:02 log.py | INFO | 👀 assertText: 1656247857.707482.
+ 2022-06-26 20:51:02 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:02 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-26 20:51:02 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-26 20:51:02 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:02 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:02 log.py | DEBUG | [type]: json      [time]: 0.423868 
+
+ 2022-06-26 20:51:02 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': 'e470f5bdbe06b7fe50fc7f152255163e359f8bf0', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-26 20:51:02 log.py | INFO | Execute login - 获取token success!
+ 2022-06-26 20:51:02 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:02 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/?page=1&size=6 
+
+ 2022-06-26 20:51:02 log.py | DEBUG | [headers]:
+ {'token': 'e470f5bdbe06b7fe50fc7f152255163e359f8bf0'} 
+
+ 2022-06-26 20:51:03 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:03 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [type]: json      [time]: 0.093723 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 29, 'page': 1, 'size': 6, 'projectList': [{'id': 75, 'name': 'shanqw_TEST', 'describe': '测试使用', 'status': True, 'create_time': '2022-06-06 03:08:01'}, {'id': 129, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 00:52:02'}, {'id': 131, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 01:25:30'}, {'id': 132, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:23'}, {'id': 134, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:28'}, {'id': 136, 'name': '1656247857.707482', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-10 05:01:34'}]}} 
+
+ 2022-06-26 20:51:03 log.py | INFO | Execute get_id - 获取id success!
+ 2022-06-26 20:51:03 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:03 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/module/ 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [headers]:
+ {'token': 'e470f5bdbe06b7fe50fc7f152255163e359f8bf0'} 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [data]:
+ {'project_id': 136, 'name': '创建根节点', 'describe': '111', 'parent_id': 0} 
+
+ 2022-06-26 20:51:03 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:03 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [type]: json      [time]: 0.079881 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': []} 
+
+ 2022-06-26 20:51:03 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:03 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/?page=1&size=6 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [headers]:
+ {'token': 'e470f5bdbe06b7fe50fc7f152255163e359f8bf0'} 
+
+ 2022-06-26 20:51:03 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:03 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [type]: json      [time]: 0.079252 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 29, 'page': 1, 'size': 6, 'projectList': [{'id': 75, 'name': 'shanqw_TEST', 'describe': '测试使用', 'status': True, 'create_time': '2022-06-06 03:08:01'}, {'id': 129, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 00:52:02'}, {'id': 131, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 01:25:30'}, {'id': 132, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:23'}, {'id': 134, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:28'}, {'id': 136, 'name': '1656247857.707482', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-10 05:01:34'}]}} 
+
+ 2022-06-26 20:51:03 log.py | INFO | Execute get_id - 获取id success!
+ 2022-06-26 20:51:03 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:03 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/136/moduleTree 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [headers]:
+ {'token': 'e470f5bdbe06b7fe50fc7f152255163e359f8bf0'} 
+
+ 2022-06-26 20:51:03 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:03 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [type]: json      [time]: 0.032223 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 112, 'parent_id': 0, 'label': '创建根节点', 'children': []}, {'id': 114, 'parent_id': 0, 'label': '创建根节点', 'children': []}]} 
+
+ 2022-06-26 20:51:03 log.py | INFO | Execute get_module_id - 获取根节点id success!
+ 2022-06-26 20:51:03 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:03 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/case/create/ 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [headers]:
+ {'token': 'e470f5bdbe06b7fe50fc7f152255163e359f8bf0'} 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [json]:
+ {'name': '这是名称啦', 'module_id': 112, 'method': 'GET', 'url': 'http://httpbin.org/get', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"这是response"', 'assert_type': 'include', 'assert_text': '这是assert'} 
+
+ 2022-06-26 20:51:03 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:03 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [type]: json      [time]: 0.073079 
+
+ 2022-06-26 20:51:03 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': []} 
+
+ 2022-06-26 20:51:03 log.py | INFO | 📖 http://quick.testpub.cn/#/login
+ 2022-06-26 20:51:04 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> clear input.
+ 2022-06-26 20:51:04 log.py | INFO | ✅ Find 2 element: css selector=[type=text]  -> input 'admin' and enter.
+ 2022-06-26 20:51:05 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> clear input.
+ 2022-06-26 20:51:06 log.py | INFO | ✅ Find 3 element: css selector=[type=password]  -> input 'admin123456' and enter.
+ 2022-06-26 20:51:07 log.py | INFO | ✅ Find 2 element: css selector=#loginButton  -> click.
+ 2022-06-26 20:51:07 log.py | INFO | 💤️ sleep: 3s.
+ 2022-06-26 20:51:10 log.py | INFO | 🔖 Test Case: 进入用例管理界面
+ 2022-06-26 20:51:11 log.py | INFO | 🔍 find Find 1 element: css selector=.el-icon-s-grid .
+ 2022-06-26 20:51:11 log.py | INFO | ✅ click.
+ 2022-06-26 20:51:11 log.py | INFO | 🔖 Test Case: 构建根节点
+ 2022-06-26 20:51:11 log.py | INFO | 🔍 find Find 1 element: css selector=.el-input__inner .
+ 2022-06-26 20:51:11 log.py | INFO | ✅ Move to the element and click.
+ 2022-06-26 20:51:13 log.py | INFO | 🔍 find Find 1 element: css selector=body > div.el-select-dropdown.el-popper > div.el-scrollbar > div.el-select-dropdown__wrap.el-scrollbar__wrap > ul > li:nth-last-child(1) > span .
+ 2022-06-26 20:51:13 log.py | INFO | ✅ click.
+ 2022-06-26 20:51:14 log.py | INFO | 🔍 find Find 2 element: css selector=.el-icon-circle-plus-outline .
+ 2022-06-26 20:51:14 log.py | INFO | ✅ click.
+ 2022-06-26 20:51:14 log.py | INFO | 🔍 find Find 1 element: css selector=#nav > div > section > section > main > div > div.project-dialog > div > div > div.el-dialog__body > form > div:nth-child(2) > div > div > input .
+ 2022-06-26 20:51:14 log.py | INFO | ✅ input '1656247863.4423995'.
+ 2022-06-26 20:51:15 log.py | INFO | 🔍 find Find 1 element: css selector=#nav > div > section > section > main > div > div.project-dialog > div > div > div.el-dialog__body > form > div:nth-child(4) > div > div > button.el-button.el-button--primary .
+ 2022-06-26 20:51:15 log.py | INFO | ✅ click.
+ 2022-06-26 20:51:15 log.py | INFO | 👀 assertElement.
+ 2022-06-26 20:51:16 log.py | INFO | ✅ Find 1 element: css selector=.el-message__content .
+ 2022-06-26 20:51:16 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:16 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-26 20:51:16 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-26 20:51:17 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:17 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [type]: json      [time]: 0.472477 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '8e39c2c45a7e7c6b989da49b031917f79fb982a0', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-26 20:51:17 log.py | INFO | Execute login - 获取token success!
+ 2022-06-26 20:51:17 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:17 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/?page=1&size=6 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [headers]:
+ {'token': '8e39c2c45a7e7c6b989da49b031917f79fb982a0'} 
+
+ 2022-06-26 20:51:17 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:17 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [type]: json      [time]: 0.073113 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 29, 'page': 1, 'size': 6, 'projectList': [{'id': 75, 'name': 'shanqw_TEST', 'describe': '测试使用', 'status': True, 'create_time': '2022-06-06 03:08:01'}, {'id': 129, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 00:52:02'}, {'id': 131, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 01:25:30'}, {'id': 132, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:23'}, {'id': 134, 'name': '测试项目', 'describe': '这是我的测试测试项目', 'status': True, 'create_time': '2022-06-10 05:01:28'}, {'id': 136, 'name': '1656247857.707482', 'describe': '不可描述1', 'status': True, 'create_time': '2022-06-10 05:01:34'}]}} 
+
+ 2022-06-26 20:51:17 log.py | INFO | Execute get_id - 获取id success!
+ 2022-06-26 20:51:17 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:17 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/project/136/moduleTree 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [headers]:
+ {'token': '8e39c2c45a7e7c6b989da49b031917f79fb982a0'} 
+
+ 2022-06-26 20:51:17 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:17 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [type]: json      [time]: 0.032582 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': [{'id': 112, 'parent_id': 0, 'label': '创建根节点', 'children': []}, {'id': 114, 'parent_id': 0, 'label': '创建根节点', 'children': []}]} 
+
+ 2022-06-26 20:51:17 log.py | INFO | Execute get_module_id - 获取根节点id success!
+ 2022-06-26 20:51:17 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:17 log.py | INFO | [method]: GET      [url]: http://quick.testpub.cn/api/v1/module/112/cases/?page=1&size=5 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [headers]:
+ {'token': '8e39c2c45a7e7c6b989da49b031917f79fb982a0'} 
+
+ 2022-06-26 20:51:17 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:17 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [type]: json      [time]: 0.079691 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'total': 2, 'page': 1, 'size': 5, 'caseList': [{'id': 51, 'name': '这是名称啦', 'url': 'http://httpbin.org/get', 'method': 'GET', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"这是response"', 'assert_type': 'include', 'assert_text': '这是assert', 'module_id': 112, 'module_name': '创建根节点', 'create_time': '2022-06-26 12:49:05', 'project_id': '136', 'project_name': '1656247857.707482'}, {'id': 52, 'name': '这是名称啦', 'url': 'http://httpbin.org/get', 'method': 'GET', 'header': '{"token":"123"}', 'params_type': 'params', 'params_body': '{"hello":"world"}', 'result': '"这是response"', 'assert_type': 'include', 'assert_text': '这是assert', 'module_id': 112, 'module_name': '创建根节点', 'create_time': '2022-06-26 12:51:03', 'project_id': '136', 'project_name': '1656247857.707482'}]}} 
+
+ 2022-06-26 20:51:17 log.py | INFO | Execute get_class - 获取用例id success!
+ 2022-06-26 20:51:17 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-26 20:51:17 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/task/create/ 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [headers]:
+ {'token': '8e39c2c45a7e7c6b989da49b031917f79fb982a0'} 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [json]:
+ {'project_id': 136, 'id': 0, 'name': '以为是', 'describe': '啊啊啊', 'cases': [{'moduleId': 112, 'casesId': [51]}]} 
+
+ 2022-06-26 20:51:17 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-26 20:51:17 log.py | INFO | successful with status 200 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [type]: json      [time]: 0.08855 
+
+ 2022-06-26 20:51:17 log.py | DEBUG | [response]:
+ {'success': True, 'message': '', 'error': {'code': '', 'message': ''}, 'data': {'project_id': 136, 'name': '以为是', 'describe': '啊啊啊'}} 
+
+ 2022-06-26 20:51:17 log.py | SUCCESS | generated html file: file:///C:\Users\74708\Desktop\myseldom\reports\2022_06_26_20_50_07_result.html
+ 2022-06-26 20:51:17 log.py | SUCCESS | generated log file: file:///C:\Users\74708\Desktop\myseldom\reports\seldom_log.log
