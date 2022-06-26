@@ -1,0 +1,101 @@
+ 2022-06-06 17:40:53 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 17:40:53 log.py | INFO | [method]: POST      [url]: None/api/v1/login/ 
+
+ 2022-06-06 17:40:53 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-06 17:41:54 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 17:41:54 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-06 17:41:54 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-06 17:41:55 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-06 17:41:55 log.py | INFO | successful with status 200 
+
+ 2022-06-06 17:41:55 log.py | DEBUG | [type]: json      [time]: 0.402202 
+
+ 2022-06-06 17:41:55 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '3df1aff9cc4605dde489cf8a334609cb0de0620a', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-06 17:45:08 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 17:45:08 log.py | INFO | [method]: POST      [url]: None/api/v1/login/ 
+
+ 2022-06-06 17:45:08 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-06 17:46:29 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 17:46:29 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-06 17:46:29 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-06 17:46:30 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-06 17:46:30 log.py | INFO | successful with status 200 
+
+ 2022-06-06 17:46:30 log.py | DEBUG | [type]: json      [time]: 0.438786 
+
+ 2022-06-06 17:46:30 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '7364503d2999ca434c31207444750ad2eace4571', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-06 17:46:30 log.py | INFO | Execute login - 获取token success!
+ 2022-06-06 17:53:50 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 17:53:50 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-06 17:53:50 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-06 17:53:50 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-06 17:53:50 log.py | INFO | successful with status 200 
+
+ 2022-06-06 17:53:50 log.py | DEBUG | [type]: json      [time]: 0.437882 
+
+ 2022-06-06 17:53:50 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': 'd552c8df2471c4c1df4a550fb362eeff92261e50', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-06 17:53:50 log.py | INFO | Execute login - 获取token success!
+ 2022-06-06 17:54:51 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 17:54:51 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-06 17:54:51 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-06 17:54:51 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-06 17:54:51 log.py | INFO | successful with status 200 
+
+ 2022-06-06 17:54:51 log.py | DEBUG | [type]: json      [time]: 0.382821 
+
+ 2022-06-06 17:54:51 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': 'ed8f03894e5c964348d1256ef15d7cd7d141ed87', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-06 17:54:51 log.py | INFO | Execute login - 获取token success!
+ 2022-06-06 17:54:51 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 17:54:51 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-06 17:54:51 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-06 17:54:52 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-06 17:54:52 log.py | INFO | successful with status 200 
+
+ 2022-06-06 17:54:52 log.py | DEBUG | [type]: json      [time]: 0.364132 
+
+ 2022-06-06 17:54:52 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '293a177477b8d767f497a16219efa3629a971239', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-06 17:54:52 log.py | INFO | Execute login - 获取token success!
+ 2022-06-06 17:55:00 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 17:55:00 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-06 17:55:00 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-06 17:55:01 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-06 17:55:01 log.py | INFO | successful with status 200 
+
+ 2022-06-06 17:55:01 log.py | DEBUG | [type]: json      [time]: 0.584098 
+
+ 2022-06-06 17:55:01 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '45f260e8f53f75825f86c0481ce93db92d614f53', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-06 17:55:01 log.py | INFO | Execute login - 获取token success!

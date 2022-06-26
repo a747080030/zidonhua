@@ -1,0 +1,94 @@
+ 2022-06-01 11:17:50 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-01 11:24:21 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-01 11:24:21 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-01 11:32:30 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-01 11:32:30 log.py | INFO | [method]: POST      [url]: None/#/login 
+
+ 2022-06-01 11:32:30 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': '123456'} 
+
+ 2022-06-01 11:32:30 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-01 11:32:30 log.py | INFO | [method]: POST      [url]: None/#/login 
+
+ 2022-06-01 11:32:30 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin'} 
+
+ 2022-06-01 14:20:09 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-01 14:20:09 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login 
+
+ 2022-06-01 14:20:09 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin'} 
+
+ 2022-06-01 14:20:09 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-01 14:20:09 log.py | WARNING | unsuccessful with status 405 
+
+ 2022-06-01 14:20:09 log.py | DEBUG | [type]: json      [time]: 0.032909 
+
+ 2022-06-01 14:20:09 log.py | DEBUG | [response]:
+ {'detail': 'Method "GET" not allowed.'} 
+
+ 2022-06-01 14:20:09 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-01 14:20:09 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login 
+
+ 2022-06-01 14:20:09 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-01 14:20:09 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-01 14:20:09 log.py | WARNING | unsuccessful with status 405 
+
+ 2022-06-01 14:20:09 log.py | DEBUG | [type]: json      [time]: 0.033448 
+
+ 2022-06-01 14:20:09 log.py | DEBUG | [response]:
+ {'detail': 'Method "GET" not allowed.'} 
+
+ 2022-06-01 14:21:38 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-01 14:21:38 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-01 14:21:38 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin'} 
+
+ 2022-06-01 14:21:38 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-01 14:21:38 log.py | INFO | successful with status 200 
+
+ 2022-06-01 14:21:38 log.py | DEBUG | [type]: json      [time]: 0.482965 
+
+ 2022-06-01 14:21:38 log.py | DEBUG | [response]:
+ {'success': False, 'error': {'code': '10011', 'message': '用户名密码错误'}, 'data': []} 
+
+ 2022-06-01 14:21:38 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-01 14:21:38 log.py | INFO | [method]: POST      [url]: http://quick.testpub.cn/api/v1/login/ 
+
+ 2022-06-01 14:21:38 log.py | DEBUG | [data]:
+ {'username': 'admin', 'password': 'admin123456'} 
+
+ 2022-06-01 14:21:39 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-01 14:21:39 log.py | INFO | successful with status 200 
+
+ 2022-06-01 14:21:39 log.py | DEBUG | [type]: json      [time]: 0.380607 
+
+ 2022-06-01 14:21:39 log.py | DEBUG | [response]:
+ {'success': True, 'error': {'code': '', 'message': ''}, 'data': {'Token': '4eca408e4e4eeccee8681ba984dd1217260709a0', 'User': '{"id": 1, "name": "admin"}'}} 
+
+ 2022-06-04 16:22:52 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-04 16:22:52 log.py | INFO | [method]: GET      [url]: http://httpbin.org/get 
+
+ 2022-06-04 16:22:52 log.py | DEBUG | [params]:
+ {'hobby': ['basketball', 'swim'], 'name': 'tom', 'age': '18'} 
+
+ 2022-06-04 16:22:52 log.py | INFO | -------------- Response ----------------[🛬️]
+ 2022-06-04 16:22:52 log.py | INFO | successful with status 200 
+
+ 2022-06-04 16:22:52 log.py | DEBUG | [type]: json      [time]: 0.545394 
+
+ 2022-06-04 16:22:52 log.py | DEBUG | [response]:
+ {'args': {'age': '18', 'hobby': ['basketball', 'swim'], 'name': 'tom'}, 'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.26.0', 'X-Amzn-Trace-Id': 'Root=1-629b165c-2b39b5575a84036662a3dcd4'}, 'origin': '120.41.166.103', 'url': 'http://httpbin.org/get?hobby=basketball&hobby=swim&name=tom&age=18'} 
+
+ 2022-06-06 15:19:18 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 15:19:18 log.py | INFO | [method]: POST      [url]: api/v1/login/ 
+
+ 2022-06-06 15:19:18 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 15:19:18 log.py | INFO | [method]: POST      [url]: api/v1/login/ 
+
+ 2022-06-06 15:19:18 log.py | INFO | -------------- Request -----------------[🚀]
+ 2022-06-06 15:19:18 log.py | INFO | [method]: POST      [url]: api/v1/login/ 
+
